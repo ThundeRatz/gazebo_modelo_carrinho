@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Wood</material>
+  </gazebo>
+
+  <gazebo reference="bateria_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rodadireita_link">
+    <material>Gazebo/DarkYellow</material>
+  </gazebo>
+
+  <gazebo reference="rodaesquerda_link">
+    <material>Gazebo/DarkYellow</material>
+  </gazebo>
+
+  <gazebo reference="sonar_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="arduino_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="motoresquerdo_link">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo reference="motordireito_link">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo reference="sensor1_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="sensor2_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="sensor3_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="sensor4_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="sensor5_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+</robot>

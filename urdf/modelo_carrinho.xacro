@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="modelo_carrinho" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="corpo"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="corpo"/>
+    <child link="base_link"/>
+  </joint>
+
+  <!-- Import all Gazebo plugins -->
+  <!-- <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.gazebo" /> -->
+
+  <!-- Code exported from SolidWorks -->
+  <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.urdf" />
+
+  <!-- Definition of motor -->
+  <xacro:include filename="$(find modelo_carrinho)/urdf/motor.xacro"/>
+
+  <xacro:include filename="$(find modelo_carrinho)/urdf/colors.xacro"/>
+
+  <xacro:motor joint_name="rodaesquerda" gear_rate="1"/>
+  <xacro:motor joint_name="rodadireita" gear_rate="1"/>
+
+</robot>
