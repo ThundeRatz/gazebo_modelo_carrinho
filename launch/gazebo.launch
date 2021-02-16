@@ -1,20 +1,42 @@
+<!-- Reference:
+https://github.com/ros/urdf_sim_tutorial -->
+
 <launch>
-  <include
-    file="$(find gazebo_ros)/launch/empty_world.launch" />
-  <node
-    name="tf_footprint_base"
-    pkg="tf"
-    type="static_transform_publisher"
-    args="0 0 0 0 0 0 base_link base_footprint 40" />
-  <node
-    name="spawn_model"
-    pkg="gazebo_ros"
-    type="spawn_model"
-    args="-file $(find modelo_carrinho)/urdf/modelo_carrinho.urdf -urdf -model modelo_carrinho"
-    output="screen" />
-  <node
-    name="fake_joint_calibration"
-    pkg="rostopic"
-    type="rostopic"
-    args="pub /calibrated std_msgs/Bool true" />
+
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="true"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="recording" default="false"/>
+  <arg name="single" default="false"/>
+  <arg name="match" default="false"/>
+  <arg name="world_name" default="vss_field.world"/>
+  <arg name="model" default="$(find modelo_carrinho)/urdf/modelo_carrinho.xacro"/>
+  <arg name="height" default="0.080"/>
+  <arg name="x" default="-0.25" />
+  <arg name="y" default="0" />
+  <arg name="yaw" default="0" />
+
+  <!-- Add our project workspace to Gazebo index to load custom models -->
+  <env name="GAZEBO_RESOURCE_PATH" value="$(find modelo_carrinho)"/>
+  <env name="GAZEBO_MODEL_PATH" value="$(find vss_simulation)/models"/>
+
+  <!-- Load world model -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="recording" value="$(arg recording)"/>
+    <!-- <arg name="world_name" value="$(find vss_simulation)/worlds/$(arg world_name)"/> -->
+  </include>
+
+  <!-- Load robot file -->
+  <include file="$(find modelo_carrinho)/launch/spawn_robot.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="x" value="$(arg x)" />
+    <arg name="y" value="$(arg y)" />
+    <arg name="yaw" value="$(arg yaw)" />
+  </include>
+
 </launch>
