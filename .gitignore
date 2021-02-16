@@ -1,0 +1,39 @@
+
+*.o
+*~
+*.bck*
+*.bak
+.deps/
+autom4te.cache/
+build/
+local_files/
+Imagens/
+config.log
+aclocal.m4
+Makefile.in
+compile
+configure
+depcomp
+install-sh
+missing
+*.gch
+*.pch
+*.swp
+.dirstamp
+.clang_complete
+.tags*
+*.save*
+
+# Python compiled files
+*.pyc
+
+# Hidden files
+..*
+
+# vscode files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Doxygen generated files
+Doxygen/
