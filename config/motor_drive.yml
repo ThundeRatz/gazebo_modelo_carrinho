@@ -1,0 +1,18 @@
+# Ref:
+# https://answers.ros.org/question/326628/how-to-control-velocity-of-joints-in-gazebo-using-ros_controllers/
+
+robot_left_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: rodaesquerda_joint
+  pid:
+    p: 100.0
+    i: 0.01
+    d: 10.0
+
+robot_right_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: rodadireita_joint
+  pid:
+    p: 100.0
+    i: 0.01
+    d: 10.0

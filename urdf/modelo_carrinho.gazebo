@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!-- Ref: http://gazebosim.org/tutorials/?tut=ros_urdf
+    http://answers.gazebosim.org/question/13506/preventing-bouncing-of-object/
+    -->
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Corpo -->
+  <gazebo reference="base_link">
+    <mu1 value="0.1"/>
+    <mu2 value="0.1"/>
+    <kp value="1e12" />
+    <kd value="1.0" />
+  </gazebo>
+
+  <!-- Rodas -->
+  <xacro:macro name="roda" params="side">
+    <gazebo reference="roda${side}_link">
+      <mu1 value="2.0"/>
+      <mu2 value="2.0"/>
+      <kp value="1e12" />
+      <kd value="1.0" />
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:roda side="esquerda"/>
+  <xacro:roda side="direita"/>
+
+  <!-- Load gazebo plugin to control the robot -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/modelo_carrinho</robotNamespace>
+    </plugin>
+  </gazebo>
+</robot>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<robot name="modelo_carrinho" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="modelo_carrinho"
+  xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <link name="corpo"/>
 
@@ -10,7 +11,7 @@
   </joint>
 
   <!-- Import all Gazebo plugins -->
-  <!-- <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.gazebo" /> -->
+  <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.gazebo" />
 
   <!-- Code exported from SolidWorks -->
   <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.urdf" />
