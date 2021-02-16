@@ -16,7 +16,7 @@ indent_size = 2
 [Makefile]
 indent_style = tab
 
-[*.{yml,launch}]
+[*.{yml,launch,xml}]
 indent_size = 2
 
 [*.{xacro,sdf,urdf,gazebo}]
