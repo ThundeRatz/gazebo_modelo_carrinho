@@ -12,7 +12,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/base_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/base_link.stl" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -21,7 +21,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/base_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/base_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -34,7 +34,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sonar_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sonar_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -43,7 +43,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sonar_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sonar_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -63,7 +63,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/bateria_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/bateria_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.109803921568627 0.109803921568627 0.109803921568627 1" />
@@ -72,7 +72,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/bateria_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/bateria_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -91,7 +91,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/arduino_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/arduino_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -100,7 +100,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/arduino_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/arduino_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -119,7 +119,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motoresquerdo_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/motoresquerdo_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -128,7 +128,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motoresquerdo_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/motoresquerdo_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motordireito_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/motordireito_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -156,7 +156,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motordireito_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/motordireito_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -175,7 +175,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor1_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -184,7 +184,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor1_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -203,7 +203,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodaesquerda_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/rodaesquerda_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -212,7 +212,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodaesquerda_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/rodaesquerda_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -231,7 +231,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodadireita_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/rodadireita_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -240,7 +240,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodadireita_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/rodadireita_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -259,7 +259,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor2_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -268,7 +268,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor2_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -287,7 +287,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor3_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -296,7 +296,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor3_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -315,7 +315,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor4_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -324,7 +324,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor4_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -343,7 +343,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor5_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -352,7 +352,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor5_link.STL" />
+        <mesh filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
       </geometry>
     </collision>
   </link>
