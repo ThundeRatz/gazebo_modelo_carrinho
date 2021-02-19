@@ -10,7 +10,7 @@ https://github.com/ros/urdf_sim_tutorial -->
   <arg name="recording" default="false"/>
   <arg name="single" default="false"/>
   <arg name="match" default="false"/>
-  <arg name="world_name" default="vss_field.world"/>
+  <arg name="world_name" default="pista.world"/>
   <arg name="model" default="$(find modelo_carrinho)/urdf/modelo_carrinho.xacro"/>
   <arg name="height" default="0.080"/>
   <arg name="x" default="-0.25" />
@@ -19,16 +19,16 @@ https://github.com/ros/urdf_sim_tutorial -->
 
   <!-- Add our project workspace to Gazebo index to load custom models -->
   <env name="GAZEBO_RESOURCE_PATH" value="$(find modelo_carrinho)"/>
-  <env name="GAZEBO_MODEL_PATH" value="$(find vss_simulation)/models"/>
+  <env name="GAZEBO_MODEL_PATH" value="$(find modelo_carrinho)/models"/>
 
   <!-- Load world model -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="recording" value="$(arg recording)"/>
-    <!-- <arg name="world_name" value="$(find vss_simulation)/worlds/$(arg world_name)"/> -->
+    <arg name="world_name" value="$(find modelo_carrinho)/worlds/$(arg world_name)"/>
   </include>
 
   <!-- Load robot file -->
