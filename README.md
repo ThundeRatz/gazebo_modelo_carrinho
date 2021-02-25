@@ -7,7 +7,7 @@ Modelo de simulação de um seguidor de linha simples
 Para executar a simulação, utilize:
 
 ```bash
-roslaunch redrum gazebo.launch
+roslaunch modelo_carrinho gazebo.launch
 ```
 
 ## Dependências
