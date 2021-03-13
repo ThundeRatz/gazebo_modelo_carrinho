@@ -6,6 +6,8 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+   <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/line.sensor" />
+
   <!-- Corpo -->
   <gazebo reference="base_link">
     <mu1 value="0.1"/>
@@ -33,4 +35,11 @@
       <robotNamespace>/modelo_carrinho</robotNamespace>
     </plugin>
   </gazebo>
+
+  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading" visual="true"/>
+  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading" visual="true"/>
+  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading" visual="true"/>
+  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading" visual="true"/>
+  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading" visual="true"/>
+
 </robot>
