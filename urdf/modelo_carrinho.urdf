@@ -315,7 +315,7 @@
       xyz="1 0 0" />
   </joint>
   <link
-    name="sensor1_link">
+    name="line1_link">
     <inertial>
       <origin
         xyz="-0.0201710756030179 -0.000534527415838856 0.000204414373291266"
@@ -336,7 +336,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
+          filename="package://modelo_carrinho/meshes/line1_link.stl" />
       </geometry>
       <material
         name="">
@@ -350,12 +350,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
+          filename="package://modelo_carrinho/meshes/line1_link.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="sensor1_joint"
+    name="line1_joint"
     type="fixed">
     <origin
       xyz="0.12967 0.03813 -0.024382"
@@ -363,7 +363,7 @@
     <parent
       link="base_link" />
     <child
-      link="sensor1_link" />
+      link="line1_link" />
     <axis
       xyz="0 0 0" />
   </joint>
@@ -474,7 +474,7 @@
       xyz="0 -1 0" />
   </joint>
   <link
-    name="sensor2_link">
+    name="line2_link">
     <inertial>
       <origin
         xyz="-0.0201710756030179 -0.000534527415838842 0.000204414373291266"
@@ -495,7 +495,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
+          filename="package://modelo_carrinho/meshes/line2_link.stl" />
       </geometry>
       <material
         name="">
@@ -509,12 +509,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
+          filename="package://modelo_carrinho/meshes/line2_link.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="sensor2_joint"
+    name="line2_joint"
     type="fixed">
     <origin
       xyz="0.12967 0.01893 -0.024382"
@@ -522,12 +522,12 @@
     <parent
       link="base_link" />
     <child
-      link="sensor2_link" />
+      link="line2_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="sensor3_link">
+    name="line3_link">
     <inertial>
       <origin
         xyz="-0.020171075603018 -0.000534527415838842 0.00020441437329128"
@@ -548,7 +548,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
+          filename="package://modelo_carrinho/meshes/line3_link.stl" />
       </geometry>
       <material
         name="">
@@ -562,12 +562,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
+          filename="package://modelo_carrinho/meshes/line3_link.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="sensor3_joint"
+    name="line3_joint"
     type="fixed">
     <origin
       xyz="0.12967 -9E-05 -0.024382"
@@ -575,12 +575,12 @@
     <parent
       link="base_link" />
     <child
-      link="sensor3_link" />
+      link="line3_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="sensor4_link">
+    name="line4_link">
     <inertial>
       <origin
         xyz="-0.0201710756030179 -0.00053452741583887 0.000204414373291266"
@@ -601,7 +601,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
+          filename="package://modelo_carrinho/meshes/line4_link.stl" />
       </geometry>
       <material
         name="">
@@ -615,12 +615,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
+          filename="package://modelo_carrinho/meshes/line4_link.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="sensor4_joint"
+    name="line4_joint"
     type="fixed">
     <origin
       xyz="0.12967 -0.01911 -0.024382"
@@ -628,12 +628,12 @@
     <parent
       link="base_link" />
     <child
-      link="sensor4_link" />
+      link="line4_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="sensor5_link">
+    name="line5_link">
     <inertial>
       <origin
         xyz="-0.0201710756030179 -0.000534527415838842 0.000204414373291321"
@@ -654,7 +654,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
+          filename="package://modelo_carrinho/meshes/line5_link.stl" />
       </geometry>
       <material
         name="">
@@ -668,12 +668,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
+          filename="package://modelo_carrinho/meshes/line5_link.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="sensor5_joint"
+    name="line5_joint"
     type="fixed">
     <origin
       xyz="0.12967 -0.03795 -0.024382"
@@ -681,7 +681,7 @@
     <parent
       link="base_link" />
     <child
-      link="sensor5_link" />
+      link="line5_link" />
     <axis
       xyz="1 0 0" />
   </joint>
