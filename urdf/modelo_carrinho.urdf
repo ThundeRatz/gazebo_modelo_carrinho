@@ -2,364 +2,687 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="modelo_carrinho">
-  <link name="base_link">
+<robot
+  name="modelo_carrinho">
+  <link
+    name="base_link">
     <inertial>
-      <origin xyz="0.0395767326211164 3.7251184446252E-06 -0.0164029992441527" rpy="0 0 0" />
-      <mass value="0.0297313079671725" />
-      <inertia ixx="4.88803892671331E-05" ixy="5.70121507054806E-21" ixz="1.86566442421859E-23" iyy="0.000107552977589956" iyz="-4.42764590535738E-23" izz="0.000156250479332308" />
+      <origin
+        xyz="0.039576732621155 3.7251184446252E-06 -0.0144095999042188"
+        rpy="0 0 0" />
+      <mass
+        value="0.0297313079671725" />
+      <inertia
+        ixx="4.88803892671331E-05"
+        ixy="5.43691405910835E-21"
+        ixz="1.86566442421859E-23"
+        iyy="0.000107552977589956"
+        iyz="-4.42764590535738E-23"
+        izz="0.000156250479332308" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/base_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/base_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="1 1 1 1" />
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/base_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/base_link.stl" />
       </geometry>
     </collision>
   </link>
-  <link name="sonar_link">
+  <link
+    name="sonar_link">
     <inertial>
-      <origin xyz="0.16231800155356 0.000182522542346367 -0.00345290410239733" rpy="0 0 0" />
-      <mass value="0.0041537160429322" />
-      <inertia ixx="8.24275084489945E-07" ixy="-5.01121738699726E-13" ixz="-3.41590248007688E-10" iyy="1.86665488656075E-07" iyz="1.11208166672831E-12" izz="7.86229940420769E-07" />
+      <origin
+        xyz="-0.00869789441923501 -0.000209504762463383 2.10654746424233E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0041537160429322" />
+      <inertia
+        ixx="8.24275084489945E-07"
+        ixy="-3.41590248007691E-10"
+        ixz="5.0112173834485E-13"
+        iyy="7.86229940420769E-07"
+        iyz="-1.11208166672882E-12"
+        izz="1.86665488656075E-07" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sonar_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sonar_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sonar_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sonar_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="sonar_joint" type="prismatic">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="sonar_link" />
-    <axis xyz="0 1 0" />
-    <limit lower="0" upper="0" effort="0" velocity="0" />
+  <joint
+    name="sonar_joint"
+    type="fixed">
+    <origin
+      xyz="0.17102 0.00018254 -0.00125"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sonar_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
-  <link name="bateria_link">
+  <link
+    name="bateria_link">
     <inertial>
-      <origin xyz="0.0569730479746616 -0.00259601435525665 0.00825660066006605" rpy="0 0 0" />
-      <mass value="0.23463372251468" />
-      <inertia ixx="0.000215706289639484" ixy="-6.66914368870879E-21" ixz="4.32977351883238E-22" iyy="9.92905114197342E-05" iyz="-8.93096567615848E-21" izz="0.000242988197048486" />
+      <origin
+        xyz="0.0569730479747001 -0.00259601435525665 0.01025"
+        rpy="0 0 0" />
+      <mass
+        value="0.23463372251468" />
+      <inertia
+        ixx="0.000215706289639484"
+        ixy="-6.82424005356249E-21"
+        ixz="5.23450231381226E-22"
+        iyy="9.92905114197342E-05"
+        iyz="-8.91157863055177E-21"
+        izz="0.000242988197048486" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/bateria_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/bateria_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.109803921568627 0.109803921568627 0.109803921568627 1" />
+      <material
+        name="">
+        <color
+          rgba="0.109803921568627 0.109803921568627 0.109803921568627 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/bateria_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/bateria_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="bateria_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="bateria_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="bateria_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bateria_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
-  <link name="arduino_link">
+  <link
+    name="arduino_link">
     <inertial>
-      <origin xyz="-0.0114425264214785 -0.00528872137884197 -0.00863751064889159" rpy="0 0 0" />
-      <mass value="0.0101843904665299" />
-      <inertia ixx="2.20878499946636E-06" ixy="-3.57468350804334E-08" ixz="-1.31421007778117E-10" iyy="1.33560681881314E-06" iyz="-2.91813662719251E-09" izz="3.47251972817078E-06" />
+      <origin
+        xyz="-0.0114425264214401 -0.00528872137884194 -0.00664411130895762"
+        rpy="0 0 0" />
+      <mass
+        value="0.0101843904665299" />
+      <inertia
+        ixx="2.20878499946636E-06"
+        ixy="-3.57468350804334E-08"
+        ixz="-1.31421007778119E-10"
+        iyy="1.33560681881314E-06"
+        iyz="-2.91813662719249E-09"
+        izz="3.47251972817078E-06" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/arduino_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/arduino_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/arduino_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/arduino_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="arduino_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="arduino_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="arduino_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="arduino_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
-  <link name="motoresquerdo_link">
+  <link
+    name="motoresquerdo_link">
     <inertial>
-      <origin xyz="-0.0184948377964839 0.0652744137442133 -0.0019933983611185" rpy="0 0 0" />
-      <mass value="0.0236803152457412" />
-      <inertia ixx="1.57519600391707E-06" ixy="-1.61392075105285E-07" ixz="-9.47447440847771E-14" iyy="8.63753046358715E-06" iyz="7.66854683216194E-13" izz="8.41491588641159E-06" />
+      <origin
+        xyz="-0.0184948377964454 0.0652744137442133 9.78815445362713E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.0236803152457412" />
+      <inertia
+        ixx="1.57519600391707E-06"
+        ixy="-1.61392075105286E-07"
+        ixz="-9.4744744158514E-14"
+        iyy="8.63753046358715E-06"
+        iyz="7.66854683199634E-13"
+        izz="8.41491588641159E-06" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motoresquerdo_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/motoresquerdo_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motoresquerdo_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/motoresquerdo_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="motoresquerdo_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="motoresquerdo_link" />
-    <axis xyz="1 0 0" />
+  <joint
+    name="motoresquerdo_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="motoresquerdo_link" />
+    <axis
+      xyz="1 0 0" />
   </joint>
-  <link name="motordireito_link">
+  <link
+    name="motordireito_link">
     <inertial>
-      <origin xyz="-0.0184948377964839 -0.0659255862557866 -0.0019933983611185" rpy="0 0 0" />
-      <mass value="0.0236803152457412" />
-      <inertia ixx="1.57519600391707E-06" ixy="-1.61392075105282E-07" ixz="-9.4744743699589E-14" iyy="8.63753046358715E-06" iyz="7.66854683019368E-13" izz="8.41491588641158E-06" />
+      <origin
+        xyz="-0.0184948377964454 -0.0659255862557866 9.78815445362713E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.0236803152457412" />
+      <inertia
+        ixx="1.57519600391707E-06"
+        ixy="-1.61392075105282E-07"
+        ixz="-9.47447437462061E-14"
+        iyy="8.63753046358715E-06"
+        iyz="7.66854683021252E-13"
+        izz="8.41491588641158E-06" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motordireito_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/motordireito_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/motordireito_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/motordireito_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="motordireito_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="motordireito_link" />
-    <axis xyz="1 0 0" />
+  <joint
+    name="motordireito_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="motordireito_link" />
+    <axis
+      xyz="1 0 0" />
   </joint>
-  <link name="sensor1_link">
+  <link
+    name="sensor1_link">
     <inertial>
-      <origin xyz="0.129870310346086 0.0375954725841611 -0.0062043895740128" rpy="0 0 0" />
-      <mass value="0.0011672687384539" />
-      <inertia ixx="5.47409115450365E-08" ixy="2.09224660226093E-12" ixz="-4.24918240082326E-12" iyy="4.54677720247576E-08" iyz="-9.60984996801466E-14" izz="1.1338202252208E-08" />
+      <origin
+        xyz="-0.0201710756030179 -0.000534527415838856 0.000204414373291266"
+        rpy="0 0 0" />
+      <mass
+        value="0.0011672687384539" />
+      <inertia
+        ixx="1.1338202252208E-08"
+        ixy="9.60984996801537E-14"
+        ixz="4.24918240082326E-12"
+        iyy="4.54677720247577E-08"
+        iyz="2.09224660226093E-12"
+        izz="5.47409115450365E-08" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor1_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="sensor1_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="sensor1_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="sensor1_joint"
+    type="fixed">
+    <origin
+      xyz="0.12967 0.03813 -0.024382"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor1_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
-  <link name="rodaesquerda_link">
+  <link
+    name="rodaesquerda_link">
     <inertial>
-      <origin xyz="-2.5679905049647E-07 0.0177438799205313 1.31487906798733E-07" rpy="0 0 0" />
-      <mass value="0.0293925354796172" />
-      <inertia ixx="1.22579046710474E-05" ixy="7.15754454457052E-11" ixz="-7.2447632479196E-15" iyy="2.03781664028302E-05" iyz="-3.64436213658336E-11" izz="1.22579046689118E-05" />
+      <origin
+        xyz="-2.56799050468715E-07 0.0177438799205313 1.31487906784855E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0293925354796172" />
+      <inertia
+        ixx="1.22579046710474E-05"
+        ixy="7.1575445445615E-11"
+        ixz="-7.24476321619482E-15"
+        iyy="2.03781664028303E-05"
+        iyz="-3.64436213658115E-11"
+        izz="1.22579046689118E-05" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodaesquerda_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/rodaesquerda_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodaesquerda_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/rodaesquerda_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="rodaesquerda_joint" type="continuous">
-    <origin xyz="0 0.0755 -0.0019934" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="rodaesquerda_link" />
-    <axis xyz="0 1 0" />
+  <joint
+    name="rodaesquerda_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.0755 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rodaesquerda_link" />
+    <axis
+      xyz="0 1 0" />
   </joint>
-  <link name="rodadireita_link">
+  <link
+    name="rodadireita_link">
     <inertial>
-      <origin xyz="-7.39889158829499E-08 -0.0177438799205307 -2.78855629448627E-07" rpy="0 0 0" />
-      <mass value="0.0293925354796174" />
-      <inertia ixx="1.22579046626619E-05" ixy="-2.07746425245365E-11" ixz="2.97666563205594E-16" iyy="2.03781664028303E-05" iyz="-7.75860562386328E-11" izz="1.22579046772975E-05" />
+      <origin
+        xyz="-7.39889154111051E-08 -0.0177438799205308 -2.78855628213504E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0293925354796178" />
+      <inertia
+        ixx="1.22579046626619E-05"
+        ixy="-2.07746427302456E-11"
+        ixz="2.97682441936494E-16"
+        iyy="2.03781664028306E-05"
+        iyz="-7.75860567619646E-11"
+        izz="1.22579046772977E-05" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodadireita_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/rodadireita_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/rodadireita_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/rodadireita_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="rodadireita_joint" type="continuous">
-    <origin xyz="0 -0.076 0.0020066" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="rodadireita_link" />
-    <axis xyz="0 -1 0" />
+  <joint
+    name="rodadireita_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.076 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rodadireita_link" />
+    <axis
+      xyz="0 -1 0" />
   </joint>
-  <link name="sensor2_link">
+  <link
+    name="sensor2_link">
     <inertial>
-      <origin xyz="0.129870310346086 0.0183954725841611 -0.00620438957401274" rpy="0 0 0" />
-      <mass value="0.0011672687384539" />
-      <inertia ixx="5.47409115450365E-08" ixy="2.09224660226144E-12" ixz="-4.24918240082212E-12" iyy="4.54677720247576E-08" iyz="-9.60984996653027E-14" izz="1.1338202252208E-08" />
+      <origin
+        xyz="-0.0201710756030179 -0.000534527415838842 0.000204414373291266"
+        rpy="0 0 0" />
+      <mass
+        value="0.0011672687384539" />
+      <inertia
+        ixx="1.1338202252208E-08"
+        ixy="9.60984996653058E-14"
+        ixz="4.24918240082212E-12"
+        iyy="4.54677720247576E-08"
+        iyz="2.09224660226144E-12"
+        izz="5.47409115450364E-08" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor2_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="sensor2_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="sensor2_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="sensor2_joint"
+    type="fixed">
+    <origin
+      xyz="0.12967 0.01893 -0.024382"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor2_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
-  <link name="sensor3_link">
+  <link
+    name="sensor3_link">
     <inertial>
-      <origin xyz="0.129870310346086 -0.000624527415838877 -0.00620438957401281" rpy="0 0 0" />
-      <mass value="0.0011672687384539" />
-      <inertia ixx="5.47409115450364E-08" ixy="2.09224660226391E-12" ixz="-4.24918240081788E-12" iyy="4.54677720247575E-08" iyz="-9.60984996630824E-14" izz="1.1338202252208E-08" />
+      <origin
+        xyz="-0.020171075603018 -0.000534527415838842 0.00020441437329128"
+        rpy="0 0 0" />
+      <mass
+        value="0.0011672687384539" />
+      <inertia
+        ixx="1.1338202252208E-08"
+        ixy="9.60984996630808E-14"
+        ixz="4.24918240081788E-12"
+        iyy="4.54677720247576E-08"
+        iyz="2.09224660226391E-12"
+        izz="5.47409115450364E-08" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor3_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="sensor3_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="sensor3_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="sensor3_joint"
+    type="fixed">
+    <origin
+      xyz="0.12967 -9E-05 -0.024382"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor3_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
-  <link name="sensor4_link">
+  <link
+    name="sensor4_link">
     <inertial>
-      <origin xyz="0.129870310346086 -0.0196445274158389 -0.00620438957401277" rpy="0 0 0" />
-      <mass value="0.0011672687384539" />
-      <inertia ixx="5.47409115450364E-08" ixy="2.09224660226064E-12" ixz="-4.249182400822E-12" iyy="4.54677720247576E-08" iyz="-9.60984996638886E-14" izz="1.1338202252208E-08" />
+      <origin
+        xyz="-0.0201710756030179 -0.00053452741583887 0.000204414373291266"
+        rpy="0 0 0" />
+      <mass
+        value="0.0011672687384539" />
+      <inertia
+        ixx="1.1338202252208E-08"
+        ixy="9.60984996639053E-14"
+        ixz="4.24918240082201E-12"
+        iyy="4.54677720247576E-08"
+        iyz="2.09224660226064E-12"
+        izz="5.47409115450364E-08" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor4_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="sensor4_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="sensor4_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="sensor4_joint"
+    type="fixed">
+    <origin
+      xyz="0.12967 -0.01911 -0.024382"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor4_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
-  <link name="sensor5_link">
+  <link
+    name="sensor5_link">
     <inertial>
-      <origin xyz="0.129870310346086 -0.0384845274158389 -0.00620438957401281" rpy="0 0 0" />
-      <mass value="0.0011672687384539" />
-      <inertia ixx="5.47409115450365E-08" ixy="2.09224660225939E-12" ixz="-4.2491824008255E-12" iyy="4.54677720247577E-08" iyz="-9.60984996881135E-14" izz="1.1338202252208E-08" />
+      <origin
+        xyz="-0.0201710756030179 -0.000534527415838842 0.000204414373291321"
+        rpy="0 0 0" />
+      <mass
+        value="0.0011672687384539" />
+      <inertia
+        ixx="1.1338202252208E-08"
+        ixy="9.60984996881187E-14"
+        ixz="4.24918240082551E-12"
+        iyy="4.54677720247577E-08"
+        iyz="2.09224660225938E-12"
+        izz="5.47409115450365E-08" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
+        <mesh
+          filename="package://modelo_carrinho/meshes/sensor5_link.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="sensor5_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="sensor5_link" />
-    <axis xyz="0 0 0" />
+  <joint
+    name="sensor5_joint"
+    type="fixed">
+    <origin
+      xyz="0.12967 -0.03795 -0.024382"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensor5_link" />
+    <axis
+      xyz="1 0 0" />
   </joint>
 </robot>

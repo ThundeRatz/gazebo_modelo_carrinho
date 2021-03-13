@@ -1,1 +1,1 @@
-controller_joint_names: ['', 'sonar_joint', 'rodaesquerda_joint', 'rodadireita_joint', ]
+controller_joint_names: ['', 'rodaesquerda_joint', 'rodadireita_joint', ]
