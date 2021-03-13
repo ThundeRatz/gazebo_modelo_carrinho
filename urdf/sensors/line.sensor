@@ -6,6 +6,7 @@
     <gazebo reference="${link_reference}">
       <sensor type="camera" name="${link_reference}_sensor">
         <visualize>${visual}</visualize>
+        <updateRate>60</updateRate>
 
         <camera name="__default__">
             <noise>
