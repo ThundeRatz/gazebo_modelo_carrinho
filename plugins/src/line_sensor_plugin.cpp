@@ -34,7 +34,7 @@
 #define HORIZONTAL_FIELD_OF_VIEW 1.2F
 
 #define CLIP_NEAR 0.001F
-#define CLIP_FAR 0.3F
+#define CLIP_FAR 0.1F
 
 #define QUEUE_SIZE 1U
 
@@ -68,7 +68,13 @@ namespace gazebo {
     }
 
     void LineSensorPlugin::Load(sensors::SensorPtr _parent, sdf::ElementPtr _sdf) {
-        this->ros_node.reset(new ros::NodeHandle("line_sensor"));
+        std::string robot_namespace = "";
+
+        if (_sdf->HasElement("robotNamespace")) {
+            robot_namespace += _sdf->Get<std::string>("robotNamespace");
+        }
+
+        this->ros_node.reset(new ros::NodeHandle(robot_namespace));
 
         if (!ros::isInitialized()) {
             ROS_FATAL_STREAM("A ROS node for Gazebo has not been initialized, unable to load plugin. "
@@ -76,16 +82,16 @@ namespace gazebo {
             return;
         }
 
-        if (_sdf->HasElement("brightness_topic")) {
-            this->brightness_topic = _sdf->Get<std::string>("brightness_topic");
+        if (_sdf->HasElement("brightnessTopic")) {
+            this->brightness_topic = _sdf->Get<std::string>("brightnessTopic");
 
             this->brightness_pub = this->ros_node->advertise<std_msgs::UInt32>(this->brightness_topic, QUEUE_SIZE);
         } else {
             gzerr << "Parameter <brightness_topic> is missing." << std::endl;
         }
 
-        if (_sdf->HasElement("adc_resolution")) {
-            this->adc_resolution = _sdf->Get<int>("adc_resolution");
+        if (_sdf->HasElement("ADCResolution")) {
+            this->adc_resolution = _sdf->Get<int>("ADCResolution");
         } else {
             gzerr << "Parameter <adc_resolution> is missing." << std::endl;
         }
