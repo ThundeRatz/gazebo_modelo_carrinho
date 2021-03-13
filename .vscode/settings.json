@@ -11,7 +11,8 @@
         "*.gazebo": "xml",
         "*.urdf": "xml",
         "*.sdf": "xml",
-        "*.config": "xml"
+        "*.config": "xml",
+        "*.sensor": "xml"
     },
 
     "python.linting.pycodestyleEnabled": true,
