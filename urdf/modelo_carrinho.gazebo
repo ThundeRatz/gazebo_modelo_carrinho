@@ -36,10 +36,10 @@
     </plugin>
   </gazebo>
 
-  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading" visual="true"/>
-  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading" visual="true"/>
-  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading" visual="true"/>
-  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading" visual="true"/>
-  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading" visual="true"/>
+  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading"/>
+  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading"/>
+  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading"/>
+  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading"/>
+  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading"/>
 
 </robot>
