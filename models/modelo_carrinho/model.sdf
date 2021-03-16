@@ -104,12 +104,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='corpo_fixed_joint_lump__sensor1_link_collision_5'>
+      <collision name='corpo_fixed_joint_lump__line1_link_collision_5'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor1_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line1_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -121,12 +121,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='corpo_fixed_joint_lump__sensor2_link_collision_6'>
+      <collision name='corpo_fixed_joint_lump__line2_link_collision_6'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor2_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line2_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -138,12 +138,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='corpo_fixed_joint_lump__sensor3_link_collision_7'>
+      <collision name='corpo_fixed_joint_lump__line3_link_collision_7'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor3_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line3_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -155,12 +155,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='corpo_fixed_joint_lump__sensor4_link_collision_8'>
+      <collision name='corpo_fixed_joint_lump__line4_link_collision_8'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor4_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line4_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -172,12 +172,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='corpo_fixed_joint_lump__sensor5_link_collision_9'>
+      <collision name='corpo_fixed_joint_lump__line5_link_collision_9'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor5_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line5_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -264,12 +264,12 @@
           </script>
         </material>
       </visual>
-      <visual name='corpo_fixed_joint_lump__sensor1_link_visual_5'>
+      <visual name='corpo_fixed_joint_lump__line1_link_visual_5'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor1_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line1_link.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -279,12 +279,12 @@
           </script>
         </material>
       </visual>
-      <visual name='corpo_fixed_joint_lump__sensor2_link_visual_6'>
+      <visual name='corpo_fixed_joint_lump__line2_link_visual_6'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor2_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line2_link.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -294,12 +294,12 @@
           </script>
         </material>
       </visual>
-      <visual name='corpo_fixed_joint_lump__sensor3_link_visual_7'>
+      <visual name='corpo_fixed_joint_lump__line3_link_visual_7'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor3_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line3_link.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -309,12 +309,12 @@
           </script>
         </material>
       </visual>
-      <visual name='corpo_fixed_joint_lump__sensor4_link_visual_8'>
+      <visual name='corpo_fixed_joint_lump__line4_link_visual_8'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor4_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line4_link.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -324,12 +324,12 @@
           </script>
         </material>
       </visual>
-      <visual name='corpo_fixed_joint_lump__sensor5_link_visual_9'>
+      <visual name='corpo_fixed_joint_lump__line5_link_visual_9'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://modelo_carrinho/meshes/sensor5_link.stl</uri>
+            <uri>model://modelo_carrinho/meshes/line5_link.stl</uri>
           </mesh>
         </geometry>
         <material>

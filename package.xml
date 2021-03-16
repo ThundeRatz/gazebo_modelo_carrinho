@@ -9,10 +9,16 @@
 for modelo_carrinho robot</p>
   </description>
 
-  <author>Felipe Gomes de Melo</author>
-  <author>Thalles Carneiro</author>
-
-  <maintainer email="felipegmelo@usp.br" />
+  <maintainer email="felipegmelo@usp.br">Felipe Gomes de Melo</maintainer>
+  <maintainer email="lucas.haug@thunderatz.org">Thalles Carneiro</maintainer>
+  <maintainer email="thalles.carneiro@thunderatz.org">Lucas Haug</maintainer>
+  <maintainer email="lucas.schneider@thunderatz.org">Lucas Schneider</maintainer>
+  <maintainer email="felipe.bagni@thunderatz.org">Felipe Bagni</maintainer>
+  <maintainer email="felipe.luna@thunderatz.org">Felipe Luna</maintainer>
+  <maintainer email="leticia.kimoto@thunderatz.org">Leticia Kimoto</maintainer>
+  <maintainer email="gabriel.kishida@thunderatz.org">Gabriel Kishida</maintainer>
+  <maintainer email="vanderson.santos@thunderatz.org">Vanderson dos Santos</maintainer>
+  <maintainer email="wu.kam@thunderatz.org">Wu Kam Long</maintainer>
 
   <license>MIT</license>
 
@@ -26,16 +32,27 @@ for modelo_carrinho robot</p>
   <depend>gazebo</depend>
 
   <build_depend>geometry_msgs</build_depend>
+  <build_depend>gazebo_plugins</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
 
   <build_export_depend>geometry_msgs</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>gazebo_plugins</build_export_depend>
+  <build_export_depend>gazebo_ros</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
 
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>python-pygame</exec_depend>
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
 
   <export>
-    <architecture_independent />
+    <gazebo_ros plugin_path="${prefix}/../../lib"/>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
   </export>
 </package>

@@ -19,5 +19,5 @@ indent_style = tab
 [*.{yml,launch,xml,config}]
 indent_size = 2
 
-[*.{xacro,sdf,urdf,gazebo}]
+[*.{xacro,sdf,urdf,gazebo,sensor}]
 indent_size = 2

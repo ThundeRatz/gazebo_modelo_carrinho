@@ -1,8 +1,23 @@
 {
+    "ros.distro": "noetic",
+    "doxdocgen.generic.dateFormat": "MM/YYYY",
+    "doxdocgen.file.copyrightTag": [
+        "@copyright MIT License - Copyright (c) 2021 ThundeRatz"
+    ],
+    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+
+    "files.associations": {
+        "*.world": "xml",
+        "*.gazebo": "xml",
+        "*.urdf": "xml",
+        "*.sdf": "xml",
+        "*.config": "xml",
+        "*.sensor": "xml"
+    },
+
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.enabled": true,
     "python.autoComplete.extraPaths": [
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
-    "python.analysis.extraPaths": [
-        "/opt/ros/noetic/lib/python3/dist-packages"
-    ]
 }

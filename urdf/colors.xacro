@@ -34,23 +34,23 @@
     <material>Gazebo/Yellow</material>
   </gazebo>
 
-  <gazebo reference="sensor1_link">
+  <gazebo reference="line1_link">
     <material>Gazebo/Blue</material>
   </gazebo>
 
-  <gazebo reference="sensor2_link">
+  <gazebo reference="line2_link">
     <material>Gazebo/Blue</material>
   </gazebo>
 
-  <gazebo reference="sensor3_link">
+  <gazebo reference="line3_link">
     <material>Gazebo/Blue</material>
   </gazebo>
 
-  <gazebo reference="sensor4_link">
+  <gazebo reference="line4_link">
     <material>Gazebo/Blue</material>
   </gazebo>
 
-  <gazebo reference="sensor5_link">
+  <gazebo reference="line5_link">
     <material>Gazebo/Blue</material>
   </gazebo>
 

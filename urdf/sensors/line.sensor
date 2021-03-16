@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="line_sensor" params="link_reference topic_name robot_namespace:=modelo_carrinho visual:=false">
+
+    <gazebo reference="${link_reference}">
+      <sensor type="camera" name="${link_reference}_sensor">
+        <visualize>${visual}</visualize>
+        <updateRate>60</updateRate>
+
+        <camera name="__default__">
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.007</stddev>
+            </noise>
+        </camera>
+
+        <plugin name="${link_reference}_sensor_plugin" filename="libline_sensor_plugin.so">
+          <brightnessTopic>${topic_name}</brightnessTopic>
+          <ADCResolution>10</ADCResolution>
+          <robotNamespace>${robot_namespace}</robotNamespace>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+  </xacro:macro>
+</robot>

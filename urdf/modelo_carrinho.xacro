@@ -3,13 +3,6 @@
 <robot name="modelo_carrinho"
   xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <link name="corpo"/>
-
-  <joint name="base_joint" type="fixed">
-    <parent link="corpo"/>
-    <child link="base_link"/>
-  </joint>
-
   <!-- Import all Gazebo plugins -->
   <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.gazebo" />
 
