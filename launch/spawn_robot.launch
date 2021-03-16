@@ -9,7 +9,7 @@ http://wiki.ros.org/simulator_gazebo/Tutorials/Gazebo_ROS_API-->
   <arg name="robot_name" default="modelo_carrinho" />
   <arg name="x" default="0"/>
   <arg name="y" default="0"/>
-  <arg name="z" default="0.5"/>
+  <arg name="z" default="0.15"/>
   <arg name="row" default="0"/>
   <arg name="pitch" default="0"/>
   <arg name="yaw" default="0"/>
