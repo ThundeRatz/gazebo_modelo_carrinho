@@ -8,6 +8,8 @@
 
    <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/line.sensor" />
 
+   <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/ultrasonic.sensor" />
+
   <!-- Corpo -->
   <gazebo reference="base_link">
     <mu1 value="0.1"/>
@@ -41,5 +43,7 @@
   <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading"/>
   <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading"/>
   <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading"/>
+
+  <xacro:ultrasonic_sensor link_reference="sonar_link" topic_name="ultrasonic/reading" visual="true"/>
 
 </robot>
