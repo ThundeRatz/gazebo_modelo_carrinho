@@ -13,8 +13,8 @@
             <horizontal>
               <samples>10</samples>
               <resolution>1.0</resolution>
-              <min_angle>-0.26</min_angle>
-              <max_angle>0.26</max_angle>
+              <min_angle>-0.13</min_angle>
+              <max_angle>0.13</max_angle>
             </horizontal>
             <vertical>
               <samples>10</samples>
