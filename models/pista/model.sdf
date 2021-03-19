@@ -30,12 +30,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='base_link_fixed_joint_lump__bordas2_link_collision_1'>
+      <collision name='base_link_fixed_joint_lump__bordas_link_collision_1'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://pista/meshes/bordas2_link.stl</uri>
+            <uri>model://pista/meshes/bordas_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -47,29 +47,12 @@
           </friction>
         </surface>
       </collision>
-      <collision name='base_link_fixed_joint_lump__parede2_link_collision_2'>
+      <collision name='base_link_fixed_joint_lump__parede_link_collision_2'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://pista/meshes/parede2_link.stl</uri>
-          </mesh>
-        </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode/>
-          </friction>
-        </surface>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__trilha2_link_collision_3'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://pista/meshes/trilha2_link.stl</uri>
+            <uri>model://pista/meshes/parede_link.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -96,12 +79,27 @@
           </script>
         </material>
       </visual>
-      <visual name='base_link_fixed_joint_lump__bordas2_link_visual_1'>
+      <visual name='base_link_trilha_visual'>
+        <pose>0 0 0.00019 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://pista/meshes/base_trilha.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bordas_link_visual_1'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://pista/meshes/bordas2_link.stl</uri>
+            <uri>model://pista/meshes/bordas_link.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -111,32 +109,17 @@
           </script>
         </material>
       </visual>
-      <visual name='base_link_fixed_joint_lump__parede2_link_visual_2'>
+      <visual name='base_link_fixed_joint_lump__parede_link_visual_2'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://pista/meshes/parede2_link.stl</uri>
+            <uri>model://pista/meshes/parede_link.stl</uri>
           </mesh>
         </geometry>
         <material>
           <script>
             <name>Gazebo/SkyBlue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-      <visual name='base_link_fixed_joint_lump__trilha2_link_visual_3'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://pista/meshes/trilha2_link.stl</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/FlatBlack</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
