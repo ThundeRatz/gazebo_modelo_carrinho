@@ -7,6 +7,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
    <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/line.sensor" />
+   <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/ultrasonic.sensor" />
 
   <!-- Corpo -->
   <gazebo reference="base_link">
@@ -36,10 +37,12 @@
     </plugin>
   </gazebo>
 
-  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading"/>
-  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading"/>
-  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading"/>
-  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading"/>
-  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading"/>
+  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading" visual="$(arg debug_sensors)" />
+
+  <xacro:ultrasonic_sensor link_reference="sonar_link" topic_name="ultrasonic/reading" visual="$(arg debug_sensors)" />
 
 </robot>

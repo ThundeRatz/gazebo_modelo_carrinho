@@ -3,6 +3,9 @@
 <robot name="modelo_carrinho"
   xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+ <!-- Global argument used in .gazebo file to set sensor visual properties -->
+  <xacro:arg name="debug_sensors" default="false" />
+
   <!-- Import all Gazebo plugins -->
   <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.gazebo" />
 
