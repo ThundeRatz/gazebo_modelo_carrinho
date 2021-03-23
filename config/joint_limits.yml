@@ -1,0 +1,11 @@
+joint_limits:
+  rodadireita_joint:
+    has_velocity_limits: true
+    max_velocity: 15.0
+    has_effort_limits: true
+    max_effort: 78e-3
+  rodaesquerda_joint:
+    has_velocity_limits: true
+    max_velocity: 15.0
+    has_effort_limits: true
+    max_effort: 78e-3
