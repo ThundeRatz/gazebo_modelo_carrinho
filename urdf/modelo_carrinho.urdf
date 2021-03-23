@@ -419,6 +419,7 @@
       link="rodaesquerda_link" />
     <axis
       xyz="0 1 0" />
+    <limit effort="78e-3" velocity="15.0"/>
   </joint>
   <link
     name="rodadireita_link">
@@ -471,7 +472,8 @@
     <child
       link="rodadireita_link" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
+    <limit effort="78e-3" velocity="15.0"/>
   </joint>
   <link
     name="line2_link">
