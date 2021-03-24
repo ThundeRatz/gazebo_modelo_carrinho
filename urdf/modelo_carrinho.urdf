@@ -471,7 +471,7 @@
     <child
       link="rodadireita_link" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
   </joint>
   <link
     name="line2_link">

@@ -28,6 +28,8 @@ http://wiki.ros.org/simulator_gazebo/Tutorials/Gazebo_ROS_API-->
     <!-- Load configs to control robot motors -->
     <rosparam command="load" file="$(find modelo_carrinho)/config/motor_drive.yml" />
 
+    <rosparam command="load" file="$(find modelo_carrinho)/config/joint_limits.yml" />
+
     <node name="robot_controller" pkg="controller_manager" type="spawner" args="robot_left_controller robot_right_controller"/>
 
   </group>
