@@ -3,8 +3,11 @@
 <robot name="modelo_carrinho"
   xmlns:xacro="http://www.ros.org/wiki/xacro">
 
- <!-- Global argument used in .gazebo file to set sensor visual properties -->
-  <xacro:arg name="debug_sensors" default="false" />
+  <!-- Global argument used in .gazebo file to set sensor visual properties -->
+  <xacro:arg name="debug_sensors"
+    default="false" />
+  <xacro:arg name="robot_name"
+    default="modelo_carrinh" />
 
   <!-- Import all Gazebo plugins -->
   <xacro:include filename="$(find modelo_carrinho)/urdf/modelo_carrinho.gazebo" />
@@ -17,7 +20,9 @@
 
   <xacro:include filename="$(find modelo_carrinho)/urdf/colors.xacro"/>
 
-  <xacro:motor joint_name="rodaesquerda" gear_rate="1"/>
-  <xacro:motor joint_name="rodadireita" gear_rate="1"/>
+  <xacro:motor joint_name="rodaesquerda"
+    gear_rate="1"/>
+  <xacro:motor joint_name="rodadireita"
+    gear_rate="1"/>
 
 </robot>

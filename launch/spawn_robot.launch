@@ -16,9 +16,9 @@ http://wiki.ros.org/simulator_gazebo/Tutorials/Gazebo_ROS_API-->
 
   <!-- <node name="keyboard_controller" pkg="modelo_carrinho" type="keyboard_node.py"/> -->
 
-  <group ns="modelo_carrinho">
+  <group ns="$(arg robot_name)">
 
-    <param name="robot_description" command="$(find xacro)/xacro $(arg model) debug_sensors:=$(arg debug_sensors)" />
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model) debug_sensors:=$(arg debug_sensors) robot_name:=$(arg robot_name)" />
 
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" args="-x $(arg x) -y $(arg y) -z $(arg z)

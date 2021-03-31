@@ -6,8 +6,8 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-   <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/line.sensor" />
-   <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/ultrasonic.sensor" />
+  <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/line.sensor" />
+  <xacro:include filename="$(find modelo_carrinho)/urdf/sensors/ultrasonic.sensor" />
 
   <!-- Corpo -->
   <gazebo reference="base_link">
@@ -33,16 +33,16 @@
   <!-- Load gazebo plugin to control the robot -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/modelo_carrinho</robotNamespace>
+      <robotNamespace>$(arg robot_name)</robotNamespace>
     </plugin>
   </gazebo>
 
-  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading" visual="$(arg debug_sensors)" />
-  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading" visual="$(arg debug_sensors)" />
-  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading" visual="$(arg debug_sensors)" />
-  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading" visual="$(arg debug_sensors)" />
-  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line1_link" topic_name="line_sensor_1/reading" robot_namespace="$(arg robot_name)" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line2_link" topic_name="line_sensor_2/reading" robot_namespace="$(arg robot_name)" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line3_link" topic_name="line_sensor_3/reading" robot_namespace="$(arg robot_name)" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line4_link" topic_name="line_sensor_4/reading" robot_namespace="$(arg robot_name)" visual="$(arg debug_sensors)" />
+  <xacro:line_sensor link_reference="line5_link" topic_name="line_sensor_5/reading" robot_namespace="$(arg robot_name)" visual="$(arg debug_sensors)" />
 
-  <xacro:ultrasonic_sensor link_reference="sonar_link" topic_name="ultrasonic/reading" visual="$(arg debug_sensors)" />
+  <xacro:ultrasonic_sensor link_reference="sonar_link" topic_name="ultrasonic/reading" robot_namespace="$(arg robot_name)" visual="$(arg debug_sensors)" />
 
 </robot>

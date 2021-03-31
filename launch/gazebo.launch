@@ -3,6 +3,7 @@ https://github.com/ros/urdf_sim_tutorial -->
 
 <launch>
 
+  <arg name="robot_name" default="modelo_carrinho"/>
   <arg name="debug" default="false"/>
   <arg name="debug_sensors" default="false"/>
   <arg name="gui" default="true"/>
@@ -32,6 +33,7 @@ https://github.com/ros/urdf_sim_tutorial -->
 
   <!-- Load robot file -->
   <include file="$(find modelo_carrinho)/launch/spawn_robot.launch">
+    <arg name="robot_name" value="$(arg robot_name)" />
     <arg name="model" value="$(arg model)" />
     <arg name="x" value="$(arg x)" />
     <arg name="y" value="$(arg y)" />
