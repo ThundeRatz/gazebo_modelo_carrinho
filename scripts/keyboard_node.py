@@ -115,7 +115,7 @@ def main(namespace, debug=DEFAULT_DEBUG):
 
     # Cria a janela
     win = pygame.display.set_mode((640, 480), pygame.RESIZABLE)
-    pygame.display.set_caption("nRFDongle Comunication Interface")
+    pygame.display.set_caption("Comunication Interface")
 
     # Lista de frases a serem mostradas no console
     console = []
@@ -140,7 +140,8 @@ def main(namespace, debug=DEFAULT_DEBUG):
     if not pygame.joystick.get_count():
         using_joystick = False
         print("No Joysticks to Initialize")
-        img = font.render("No Joysticks to Initialize", 1, (50, 200, 50), (0, 0, 0))
+        img = font.render("No Joysticks to Initialize",
+                          1, (50, 200, 50), (0, 0, 0))
         console.append(img)
 
     running = True
@@ -215,7 +216,8 @@ def main(namespace, debug=DEFAULT_DEBUG):
         pygame.display.flip()
 
         if using_joystick:
-            txt = "X: {} Y: {}".format(int(axis[0] * SCALE), int(axis[1] * SCALE))
+            txt = "X: {} Y: {}".format(
+                int(axis[0] * SCALE), int(axis[1] * SCALE))
             if debug:
                 print(txt)
                 img = font.render(txt, 1, (50, 200, 50), (0, 0, 0))
